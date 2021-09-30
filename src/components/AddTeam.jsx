@@ -141,8 +141,13 @@ const AddTeam = ({ show, closeFn, teamData, update }) => {
             value={team.leader.id}
           >
             <option defaultValue>Select Team Leader</option>
+            {team.leader.id && (
+              <option value={team.leader.id}>
+                {team.leader.name} - ({team.leader.position})
+              </option>
+            )}
             {availableMembers.map((employee) => (
-              <option value={employee.id} key={employee.id}>
+              <option value={employee.id}>
                 {employee.name} - ({employee.position})
               </option>
             ))}
