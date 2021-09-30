@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+}
+/* Variables */
+body {
+  --outset-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1), 10px 10px 20px #ffffff;
+  --outset-shadow-sm: -5px -5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px #ffffff;
+  --inset-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.1),
+    inset 5px 5px 10px #ffffff;
+  --fontSize-medium: large;
+  --bgcolor: #eee;
+  --color-text: #898989;
+  --color-red: #f9627d;
+  --color-green: #9ede73;
+  --color-blue: #39a2db;
+  --color-yellow: #ffb830;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 1.5rem;
+  --spacing-4: 2rem;
+  --spacing-5: 2.5rem;
+  --spacing-6: 3rem;
+  --border-radius: 1rem;
+
+  background-color: var(--bgcolor);
+  color: var(--color-text, #898989);
+}
+
+.selected {
+  box-shadow: var(--inset-shadow) !important;
+}
+
+button {
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: var(--outset-shadow);
+  cursor: pointer;
+  background-color: var(--bgcolor);
+  padding: var(--spacing-2) var(--spacing-4);
+}
+
+button:active {
+  box-shadow: var(--outset-shadow-sm);
+  filter: brightness(0.98);
+}
+.btn-group {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+input,
+select {
+  border: none;
+  box-shadow: var(--inset-shadow);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: 20rem;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  box-shadow: var(--inset-shadow), 0 0 3px 2px var(--color-green);
+}
+
+input::placeholder,
+select {
+  opacity: 0.6;
+}
+
+select option {
+  display: flex;
+  padding: var(--spacing-2);
+  justify-content: space-between;
+}
+
+table {
+  box-shadow: var(--inset-shadow);
+  border-radius: var(--border-radius);
+  padding: 0 var(--spacing-3);
+}
+tr {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+tr {
+  flex-grow: 1;
+  border-bottom: 1px solid #bbb;
+  text-align: left;
+  padding: var(--spacing-2);
+}
+thead tr:first-of-type {
+  border-bottom: 2px solid var(--color-text);
+}
+tr:last-of-type td {
+  border: none;
+}

@@ -1,0 +1,27 @@
+.addTeam form button {
+  background-color: var(--color-blue);
+}
+.selected-members-container {
+  height: calc(var(--spacing-2) * 12);
+  overflow: auto;
+  padding: var(--spacing-2);
+  box-shadow: var(--inset-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--spacing-2);
+}
+.selected-member {
+  box-shadow: var(--outset-shadow-sm);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+.selected-member .close-btn {
+  padding-left: var(--spacing-2);
+  cursor: pointer;
+  color: var(--color-red);
+}

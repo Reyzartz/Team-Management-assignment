@@ -1,0 +1,22 @@
+.card {
+  background-color: var(--bgcolor);
+  padding: var(--spacing-5);
+  border-radius: var(--border-radius);
+  min-width: 872px;
+}
+form {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-3);
+}
+
+form button {
+  width: fit-content;
+  margin: auto;
+  border-radius: 20rem;
+  background-color: var(--color-green);
+  color: var(--bgcolor);
+}

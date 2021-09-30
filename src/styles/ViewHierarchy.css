@@ -1,0 +1,45 @@
+.hierarchy-container {
+  width: 872px;
+  padding: var(--spacing-6) 0;
+}
+
+.node {
+  padding: var(--spacing-3);
+  display: inline-block;
+  position: relative;
+  background-color: var(--bgcolor);
+}
+.node h4 {
+  font-weight: 400;
+  margin-bottom: var(--spacing-1);
+}
+
+.node::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--spacing-2) * 14);
+  height: calc(var(--spacing-2) * 6);
+  box-shadow: var(--outset-shadow-sm);
+  border-radius: var(--border-radius);
+}
+.child {
+  position: relative;
+  margin-top: calc(var(--spacing-2) * 4);
+  margin-left: calc(var(--spacing-2) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.node .branch {
+  width: 2rem;
+  position: absolute;
+  left: -2rem;
+  bottom: calc(100% - 3rem);
+  border-bottom: 2px solid var(--color-text);
+  border-left: 2px solid var(--color-text);
+  min-height: 5rem;
+}

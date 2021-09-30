@@ -1,0 +1,17 @@
+.view-teams {
+  width: 872px;
+  margin: var(--spacing-3) var(--spacing-6);
+}
+.view-teams table {
+  width: 100%;
+  box-shadow: var(--outset-shadow-sm);
+  padding: var(--spacing-2) var(--spacing-5);
+}
+.view-teams tr:hover {
+  box-shadow: var(--outset-shadow-sm);
+  cursor: pointer;
+}
+.view-teams tr:active {
+  box-shadow: var(--inset-shadow);
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.quick-access h2 {
+  font-weight: 400;
+  margin-bottom: var(--spacing-2);
+}
+
+.table-container {
+  box-shadow: var(--outset-shadow);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.tab {
+  box-shadow: none;
+  font-size: medium;
+  border-radius: 50rem;
+}
+.selected-tab {
+  box-shadow: var(--inset-shadow);
+}

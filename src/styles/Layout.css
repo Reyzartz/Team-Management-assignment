@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  gap: calc(var(--spacing-6) * 2);
+}
+
+main {
+  flex-grow: 1;
+}
